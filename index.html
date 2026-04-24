@@ -1645,7 +1645,7 @@
   //    2. SHEET_URL   → Your Google Apps Script Web App URL (see SETUP-INSTRUCTIONS.md)
   //
   const BUSINESS_WA = '919910617798';                              // WhatsApp business number
-  const SHEET_URL   = 'https://script.google.com/macros/s/AKfycbxdlmdwt9vFBBLs59ANvXLOm-6C7Y3ISkCO6-0AbAm_MvKGm-J4F2dQTx0ecDL0Wp1c/exec';    // Google Sheet endpoint
+  const SHEET_URL   = 'https://script.google.com/macros/s/AKfycbztegStZ2fc2hroYiJv5QsdJXeHBg6vU3HnhfR4eXtK49tK4CVmVNqdS4scHU0BUqrl/exec';    // Google Sheet endpoint
 
   const form = document.getElementById('leadForm');
   form.addEventListener('submit', async e => {
@@ -1670,7 +1670,7 @@
 
     // 2. Save to Google Sheet (Excel) — non-blocking, fails silently
     try{
-      if(SHEET_URL && !SHEET_URL.includes('PASTE_YOUR_')){
+      if(SHEET_URL && !SHEET_URL.includes('https://script.google.com/macros/s/AKfycbztegStZ2fc2hroYiJv5QsdJXeHBg6vU3HnhfR4eXtK49tK4CVmVNqdS4scHU0BUqrl/exec')){
         fetch(SHEET_URL, {
           method:'POST',
           mode:'no-cors',
