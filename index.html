@@ -1670,7 +1670,7 @@
 
     // 2. Save to Google Sheet (Excel) — non-blocking, fails silently
     try{
-      if(SHEET_URL && !SHEET_URL.includes('https://script.google.com/macros/s/AKfycbztegStZ2fc2hroYiJv5QsdJXeHBg6vU3HnhfR4eXtK49tK4CVmVNqdS4scHU0BUqrl/exec')){
+      if(SHEET_URL && !SHEET_URL.includes('PASTE_YOUR_')){
         fetch(SHEET_URL, {
           method:'POST',
           mode:'no-cors',
